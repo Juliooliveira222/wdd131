@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Substitua "Júlio Oliveira Batista de Jesus" pelo seu nome real -->
+    <title>WDD 131 - Fundamentos da Web Dinâmica - Júlio Oliveira Batista de Jesus</title>
+    <meta name="description" content="WDD 131 - Fundamentos da Web Dinâmica. Página inicial contendo perfil pessoal e recursos de desenvolvimento web.">
+    <!-- Substitua "Júlio Oliveira Batista de Jesus" pelo seu nome real -->
+    <meta name="author" content="Júlio Oliveira Batista de Jesus">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-    <h1>Júlio Oliveira</h1>
+    <header>
+        <!-- Substitua "Júlio Oliveira Batista de Jesus" pelo seu nome real -->
+        <h1>Júlio Oliveira Batista de Jesus</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por" target="_blank">Escritura Favorita</a>
+            <a href="#" target="_blank">Projeto Final</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Título da página exigido no elemento main -->
+        <h1>Júlio Oliveira Batista de Jesus</h1>
+
+        <!-- Seção 1: Sobre Mim -->
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <div class="card-content">
+                <p>
+                    Meu nome é Júlio Oliveira Batista de Jesus e me chamam de Júlio. Nasci em Estância-SE e vivo com minha família em Caçapava-SP.
+                    Amo aprender coisas novas, estou aprendendo a programar e explorar novas tecnologias para desenvolvimento web!
+                </p>
+                <img src="imagens/perfil.jpg" alt="Foto de Perfil de Júlio Oliveira Batista de Jesus" width="150" height="200">
+            </div>
+
+            <h3>Caçapava - SP</h3>
+            <div class="card-content">
+                <img src="imagens/bandeira.cacapava-JPG.jpg" alt="Bandeira Oficial de Caçapava" width="100">
+                <p>
+                    Caçapava é uma cidade localizada no interior do estado de São Paulo, Brasil. Conhecida por sua rica história e cultura, a cidade oferece uma mistura de tradições e modernidade. Com uma população acolhedora, Caçapava é um lugar onde a comunidade se destaca pelo espírito colaborativo e pela valorização das raízes locais.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção 2: Recursos Web Dev -->
+        <section class="card">
+            <h2>Recursos Web Dev</h2>
+            <ul>
+                <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
+                <li><a href="https://smashingmagazine.com" target="_blank">Revista Smashing</a></li>
+                <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+                <li><a href="https://picsum.photos" target="_blank">Imagem de Espaço Reservado Lorem Picsum</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="anoatual"></span> ⚪ <strong>Júlio Oliveira Batista de Jesus</strong> ⚪ Brasil
+        </p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+    <!-- Script para atualizar dinamicamente o ano e a última modificação no footer -->
+    <script>
+        document.getElementById("anoatual").textContent = new Date().getFullYear();
+        document.getElementById("ultimaModificacao").textContent = "Última Modificação: " + document.lastModified;
+    </script>
+
+    <!-- Conexão do arquivo JavaScript externo -->
+    <script src="scripts/getdates.js" defer></script>
 </body>
-</html>
+</html>os

@@ -1,0 +1,247 @@
+/* ==========================================================================
+   WDD 131 - Estilos da Página Inicial (styles/base.css)
+   Layout Responsivo com CSS Grid e Flexbox
+   ========================================================================== */
+
+/* 1. Variáveis Globais de Cores e Tipografia */
+:root {
+    --primary-color: #1e3a8a;      /* Azul escuro elegante */
+    --primary-hover: #1d4ed8;      /* Azul para estados ativos/hover */
+    --accent-color: #0284c7;       /* Azul médio para barras de títulos e botões */
+    --text-dark: #1e293b;          /* Cor principal para leitura */
+    --text-muted: #64748b;         /* Cor secundária para legendas */
+    --bg-light: #f8fafc;           /* Fundo levemente cinza da página */
+    --card-bg: #ffffff;            /* Fundo branco dos cartões */
+    --border-color: #cbd5e1;       /* Bordas suaves */
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --radius: 8px;                 /* Arredondamento elegante das bordas */
+    --font-main: 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+}
+
+/* 2. Resets Globais */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 3. Cabeçalho (Header) & Navegação (Nav) */
+header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.75rem;
+    border-radius: var(--radius);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+/* 4. Conteúdo Principal (Main) */
+main {
+    max-width: 1100px;
+    width: 92%;
+    margin: 2rem auto;
+    flex: 1;
+}
+
+/* Título Principal */
+main > h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+/* Grid de duas colunas (Sobre Mim | Recursos) */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* 5. Cartões de Conteúdo (Cards) */
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+}
+
+.card h2 {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.15rem;
+    margin: 1.5rem 0 0.5rem 0;
+    padding: 0 1rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+/* Grids Internos do Cartão "Sobre Mim" */
+.bio-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.25rem;
+    align-items: center;
+}
+
+/* Formatação e Estilo das Imagens */
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    object-fit: cover;
+    display: block;
+}
+
+.profile-img img {
+    width: 130px;
+    height: 160px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.flag-img {
+    text-align: center;
+}
+
+.flag-img img {
+    width: 100%;
+    border: 1px solid var(--border-color);
+}
+
+.caption {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+}
+
+/* Lista de Links Interativos */
+.resource-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.resource-list li a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--bg-light);
+    border-radius: 4px;
+    border-left: 4px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+.resource-list li a:hover {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding-left: 1.1rem;
+}
+
+/* 6. Rodapé (Footer) */
+footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
+
+#ultimaModificacao {
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+/* 7. Design Responsivo (Celulares e Tablets) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-grid, 
+    .location-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .profile-img img,
+    .flag-img {
+        margin: 0 auto;
+    }
+
+    .flag-img {
+        max-width: 140px;
+    }
+}
