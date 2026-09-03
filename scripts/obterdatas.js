@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // 2. Preenche a data e hora da última modificação do documento
     const lastModifiedParagraph = document.getElementById("ultimaModificacao");
     if (lastModifiedParagraph) {
-        lastModifiedParagraph.textContent = Última Modificação: ${document.lastModified};
+        lastModifiedParagraph.textContent = "Última Modificação: " + document.lastModified;
     }
 });
