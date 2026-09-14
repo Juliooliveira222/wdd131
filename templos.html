@@ -1,107 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Meta tags obrigatórias do validador -->
-  <meta name="description" content="Álbum de Fotos dos Templos com informações detalhadas, localização e datas de dedicação.">
-  <meta name="author" content="Júlio Oliveira Batista de Jesus">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Álbum de Templo - Júlio Oliveira Batista de Jesus</title>
+    <meta name="description"
+      content="Álbum de templos SUD - Uma coleção de fotos de templos ao redor do mundo com design responsivo criado para o curso WDD 131.">
+    <meta name="author" content="Júlio Oliveira Batista de Jesus">
 
-  <title>Álbum do Templo</title>
-
-  <!-- Vinculação do CSS com os caminhos corretos da pasta estilos -->
-  <link rel="stylesheet" href="estilos/templos.css">
-  <link rel="stylesheet" href="estilos/templos-grande.css" media="(min-width: 800px)">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">   
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-  <!-- O validador exige o script dentro do head com o atributo defer -->
-  <script src="scripts/templos.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="estilos/templos.css">
+    <link rel="stylesheet" href="estilos/templos-grande.css">
+    <script src="scripts/templos.js" defer></script>
 </head>
 <body>
+    <header>
+        <span id="course-title">Álbum do Templo</span>
+        <button id="menu">☰</button>
+        <nav>        
+            <a href="#">Página Inicial</a>
+            <a href="#">Antigo</a>
+            <a href="#">Novo</a>
+            <a href="#">Grande</a>
+            <a href="#">Pequeno</a>
+            
+        </nav>
+    </header>
+    <main>
+        <h1>Página Inícial</h1>
+        <div class="container">
+            <figure>
+                <img src="imagens/templo-recife.jpeg" alt="Templo do Recife">
+                <figcaption>Templo do Recife</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-sãopaulo.jpg" alt="Templo de São Paulo">
+                <figcaption>Templo de São Paulo</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/salt-lake.jpg" alt="Templo de Salt Lake City">
+                <figcaption>Templo de Salt Lake City</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-salvador.jpg" alt="Templo de Salvador">
+                <figcaption>Templo de Salvador</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-curitiba.jpg" alt="Templo de Curitiba">
+                <figcaption>Templo de Curitiba</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-maceio.jpg" alt="Templo de Maceió">
+                <figcaption>Templo de Maceió</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-belo-horizonte.jpg" alt="Templo de Belo Horizonte">
+                <figcaption>Templo de Belo Horizonte</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-oaxaca-mexico.jpg" alt="Templo de Oaxaca, México">
+                <figcaption>Templo de Oaxaca, México</figcaption>
+            </figure>
+            <figure>
+                <img src="imagens/templo-paris.jpg" alt="Templo de Belém">
+                <figcaption>Templo de Belém</figcaption>
+            </figure>
 
-  <!-- Cabeçalho / Navegação -->
-  <header>
-    <h1>Álbum do Templo</h1>
-    <button id="menu" aria-label="Menu">&#9776;</button>
-    <nav>
-      <a href="#home">Página Inicial</a>
-      <a href="#old">Antigo</a>
-      <a href="#new">Novo</a>
-      <a href="#large">Grande</a>
-      <a href="#small">Pequeno</a>
-    </nav>
-  </header>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="anoatual"></span> ⚪ Júlio Oliveira Batista de Jesus ⚪ Brasil</p>
+        <p id="ultimaModificacao"></p>
 
-  <!-- Conteúdo Principal -->
-  <main>
-    <h2>Templo de Recife Brasil</h2>
-    
-    <div class="residence-grid">
-      <!-- Card 1 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 2 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 3 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 4 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 5 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 6 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 7 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 8 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-
-      <!-- Card 9 -->
-      <figure>
-        <img src="imagens/templo-recife.jpeg" alt="Templo de Recife Brasil" loading="lazy">
-        <figcaption>Recife Brasil</figcaption>
-      </figure>
-    </div>
-  </main>
-
-  <!-- Rodapé -->
-  <footer>
-    <p>&copy; <span id="currentyear">2026</span> |⚪ Júlio Oliveira Batista de Jesus | Caçapava, Brasil ⚪</p>
-    <p id="lastModified"></p>
-  </footer>
-
+    </footer>
 </body>
 </html>
