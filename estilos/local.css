@@ -1,3 +1,10 @@
+
+:root {
+    --cor-cabecalho: #b8325a;
+    --cor-fundo: #d9e2ec;
+    --cor-card: rgba(226, 236, 233, 0.9);
+}
+
 * {
     margin: 0;
     padding: 0; 
@@ -6,7 +13,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #d9e2ec;
+    background-color: var(--cor-fundo);
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -20,7 +27,7 @@ body {
 }
 
 .topo {
-    background-color: #b8325a;
+    background-color: var(--cor-cabecalho);
     color: white;
     padding: 10px;
     text-align: center;
@@ -44,7 +51,7 @@ body {
 }
 
 .rodape {
-    background-color: #b8325a;
+    background-color: var(--cor-cabecalho);
     color: white;
     text-align: center;
     padding: 10px;
@@ -54,14 +61,14 @@ body {
 @media (min-width: 768px) {
     .container {
         max-width: 800px;
-        position: relative; 
+        position: relative;
     }
 
     .card {
         position: absolute;
         top: 80px;
         width: 240px;
-        background-color: rgba(226, 236, 233, 0.9); 
+        background-color: var(--cor-card);
         border-radius: 4px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
@@ -72,5 +79,9 @@ body {
 
     .card.clima {
         right: 20px;
+    }
+
+    .card.clima h2::after {
+        content: " ☀️";
     }
 }

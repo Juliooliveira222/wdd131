@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilos/local.css">
 </head>
 <body>
-    
+
     <div class="container">
 
         <header class="topo">
@@ -27,17 +27,19 @@
 
         <section class="card clima">
             <h2>Clima</h2>
-            <p>Temperatura média anual: 19,3 °C</p>
-            <p>Temperatura máxima: 35 °C</p>
-            <p>Temperatura mínima: 10 °C</p>
-            <p>Condições climáticas: Ensolarado com chuvas em períodos específicos</p>
+            <p>Temperatura: 9 °C</p>
+            <p>Vento: 10 km/h</p>
+            <p>Sensação Térmica: <span id="sensacao">--</span></p>
+            <p>Condições: Ensolarado com chuvas em períodos específicos</p>
         </section>
 
         <footer class="rodape">
-            <p>© 2026 São Paulo. ⚪ Júlio Oliveira Batista de Jesus ⚪ </p>
+            <p>© <span id="ano"></span> São Paulo. ⚪ Júlio Oliveira Batista de Jesus ⚪</p>
+            <p>Última modificação: <span id="modificacao"></span></p>
         </footer>
 
-    </div> 
+    </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
