@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página sobre a cidade de São Paulo contendo dados populacionais e informações de clima.">
+    <meta name="author" content="Júlio Oliveira Batista de Jesus">
+    
     <title>São Paulo</title>
     <link rel="stylesheet" href="estilos/local.css">
 </head>
@@ -14,25 +17,45 @@
             <h1>São Paulo</h1>
         </header>
 
-        <div class="imagem-container">
-            <img src="imagens/sao-paulo.webp" alt="Imagem de São Paulo">
-        </div>
+        <main>
+            
+            <div class="imagem-container">
+                <picture>
+                    <img src="imagens/sao-paulo.webp" srcset="imagens/sao-paulo.webp" alt="Foto da cidade de São Paulo">
+                </picture>
+            </div>
 
-        <section class="card dados">
-            <h2>Data</h2>
-            <p>População: 12,33 milhões (2021)</p>
-            <p>Área: 1.521 km²</p>
-            <p>Clima: Tropical de Altitude</p>
-        </section>
+            <section class="card dados">
+                <h2>Data</h2>
+                <p>População: 11,45 milhões (IBGE 2022)</p>
+                <p>Área: 1.521 km²</p>
+                <p>Clima: Tropical de Altitude</p>
+            </section>
 
-        <section class="card clima">
-            <h2>Clima</h2>
-            <p>Temperatura: 9 °C</p>
-            <p>Vento: 10 km/h</p>
-            <p>Sensação Térmica: <span id="sensacao">--</span></p>
-            <p>Condições: Ensolarado com chuvas em períodos específicos</p>
-        </section>
+            <section class="card clima">
+                <h2>
+                     Clima 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icone-sol">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </h2>
+                <p>Temperatura: 9 °C</p>
+                <p>Vento: 10 km/h</p>
+                <p>Sensação Térmica: <span id="sensacao">--</span></p>
+                <p>Condições: Ensolarado com chuvas em períodos específicos</p>
+            </section>
 
+        </main> 
+
+    
         <footer class="rodape">
             <p>© <span id="ano"></span> São Paulo. ⚪ Júlio Oliveira Batista de Jesus ⚪</p>
             <p>Última modificação: <span id="modificacao"></span></p>

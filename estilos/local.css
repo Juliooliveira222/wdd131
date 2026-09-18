@@ -82,6 +82,9 @@ body {
     }
 
     .card.clima h2::after {
-        content: " ☀️";
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
     }
 }
