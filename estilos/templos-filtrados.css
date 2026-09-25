@@ -1,0 +1,130 @@
+:root {
+    --cor-primaria: #263550;
+    --cor-fundo: #f9f9f9;
+    --cor-texto: #333;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+ 
+header {
+    background: var(--cor-primaria); 
+    color: white;
+    padding: 1rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#course-title {
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    font-family: 'Merriweather', serif;
+}
+
+#menu {
+    font-size: 2.2rem; 
+    background: none; 
+    border: none; 
+    color: white; 
+    cursor: pointer;
+}
+ 
+nav {
+    display: none; 
+    width: 100%; 
+    flex-direction: column; 
+    margin-top: 1rem; 
+    background: var(--cor-primaria);
+}
+
+nav.open {
+    display: flex;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none; 
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    text-decoration: underline;
+}
+ 
+main {
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+
+main h2 {
+    text-align: center; 
+    padding: 1.5rem; 
+    font-family: 'Merriweather', serif;
+}
+ 
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.temple-card {
+    background: white; 
+    border-radius: 6px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.temple-card h3 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 0.5rem;
+    color: var(--cor-primaria);
+}
+
+.temple-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.temple-card p span {
+    font-weight: 500;
+    color: #555;
+}
+
+.temple-card img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    display: block;
+    margin-top: 0.8rem;
+    border-radius: 4px;
+}
+ 
+footer {
+    background: var(--cor-primaria); 
+    color: white; 
+    text-align: center; 
+    padding: 1.5rem; 
+    margin-top: 1rem; 
+    line-height: 1.5;
+}
