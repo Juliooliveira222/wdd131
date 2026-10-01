@@ -61,6 +61,27 @@ const templos = [
     consagracao: "1983, 2 de dezembro",
     area: 116642,
     urlDaImagem: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+  },
+  {
+    nomeDoTemplo: "Salt Lake City Utah",
+    localizacao: "Salt Lake City, Utah, Estados Unidos",
+    consagracao: "1893, 6 de abril",
+    area: 253015,
+    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-75001.jpg"
+  }, 
+  {
+    nomeDoTemplo: "Roma Itália",
+    localizacao: "Roma, Itália",
+    consagracao: "2019, 10 de março",
+    area: 58000,
+    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642.jpg"
+  },
+  {
+    nomeDoTemplo: "Tijuana México",
+    localizacao: "Tijuana, México",
+    consagracao: "2015, 18 de dezembro",
+    area: 10000,
+    urlDaImagem: "https://churchofjesuschristtemples.org/assets/img/temples/tijuana-mexico-temple/tijuana-mexico-temple-3660.jpg"
   }
 ];
 
