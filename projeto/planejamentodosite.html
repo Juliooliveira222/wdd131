@@ -1,37 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projeto Aqui é Vasco</title>
-    <meta name="description" content="Planejamento do projeto WDD 131 - Escopo, público-alvo, wireframes mobile e desktop, paleta de cores e tipografia do site de Bernardo Soares.">
+    <title>Planejamento de Projeto | Aqui é Vasco</title>
+    <meta name="description" content="Documento de planejamento do projeto WDD 131 - Escopo, público-alvo, guia de estilo e estrutura para o site Aqui é Vasco.">
     <meta name="author" content="Júlio Oliveira Batista de Jesus">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="planejamento.css">
     <script src="planejamento.js" defer></script>
 </head>
-
-<header>
-    <h1>Aqui é Vasco</h1>
-    <p>O planejamento do site é uma etapa crucial para garantir que o projeto seja bem-sucedido. Ele envolve a definição dos objetivos, público-alvo, estrutura de navegação e conteúdo do site.</p>
-</header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Notícias</a>
-        <a href="#">Curiosidades</a>
-        <a href="#">Fale Conosco</a>
-    </nav>
 <body>
+
+    <header>
+        <div class="header-container">
+            <h1>Aqui é Vasco</h1>
+            <p class="tagline">Documento de Planejamento de Site (WDD 131)</p>
+        </div>
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="#">Objetivos</a></li>
+                <li><a href="#">Público-Alvo</a></li>
+                <li><a href="#">Guia de Estilo</a></li>
+                <li><a href="#">Estrutura</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <article>
-            <h2>Objetivos do Site</h2>
-            <p>O objetivo principal do site é fornecer informações relevantes e atualizadas sobre diversos assuntos, incluindo notícias, curiosidades e dicas úteis para os visitantes.</p>
-            <img src="imagens/planejamento.jpg" alt="Planejamento do Site">
-        </article>
+        <section id="objetivos" class="card">
+            <h2>1. Objetivos do Projeto</h2>
+            <p>O objetivo principal do site <strong>Aqui é Vasco</strong> é centralizar e fornecer informações relevantes, notícias atualizadas, dados históricos e curiosidades sobre a história e o cotidiano do clube para a torcida.</p>
+            
+            <figure class="hero-image">
+                <img src="imagens/planejamento.jpg" alt="Esboço e planejamento do layout do site em papel e notebook">
+                <figcaption>Etapa inicial de mapeamento da experiência do usuário (UX).</figcaption>
+            </figure>
+        </section>
+
+        <section id="publico" class="card">
+            <h2>2. Público-Alvo & Personas</h2>
+            <div class="grid-2col">
+                <div>
+                    <h3>Perfil Geral</h3>
+                    <p>Torcedores, admiradores de futebol e entusiastas de história esportiva que buscam um portal direto, rápido e com conteúdo de qualidade sobre o Vasco.</p>
+                </div>
+                <div>
+                    <h3>Necessidades Principais</h3>
+                    <ul>
+                        <li>Navegação ágil em dispositivos móveis.</li>
+                        <li>Leitura confortável de notícias e artigos longos.</li>
+                        <li>Facilidade para encontrar contatos e áreas interativas.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="estilo" class="card">
+            <h2>3. Guia de Estilo (Style Guide)</h2>
+            
+            <h3>Paleta de Cores</h3>
+            <div class="color-palette">
+                <div class="color-box color-1"><span>#000000<br>Preto Principal</span></div>
+                <div class="color-box color-2"><span>#FFFFFF<br>Branco Fundo</span></div>
+                <div class="color-box color-3"><span>#D32F2F<br>Vermelho Destaque</span></div>
+                <div class="color-box color-4"><span>#333333<br>Cinza Texto</span></div>
+            </div>
+
+            <h3>Tipografia</h3>
+            <div class="typography-demo">
+                <p class="font-heading"><strong>Títulos (Merriweather):</strong> Usada em H1, H2 e H3 para transmitir tradição e legibilidade sólida.</p>
+                <p class="font-body"><strong>Corpo do Texto (Open Sans):</strong> Usada em parágrafos e menus para garantir uma leitura leve e moderna em qualquer tela.</p>
+            </div>
+        </section>
+
+        <section id="estrutura" class="card">
+            <h2>4. Estrutura de Navegação</h2>
+            <p>Mapeamento inicial das páginas do portal:</p>
+            <ul class="sitemap-list">
+                <li><strong>Home:</strong> Destaques principais, últimas notícias e atalhos rápidos.</li>
+                <li><strong>Notícias:</strong> Cobertura diária e reportagens.</li>
+                <li><strong>Curiosidades:</strong> Fatos históricos, estatísticas e ídolos.</li>
+                <li><strong>Fale Conosco:</strong> Formulário de contato direto e redes sociais.</li>
+            </ul>
+        </section>
     </main>
-    
+
     <footer>
-        <p>&copy; 2026 Projeto Júlio Oliveira Batista de Jesus</p>
+        <p>&copy; 2026 — Projeto idealizado por <strong>Júlio Oliveira Batista de Jesus</strong>.</p>
     </footer>
+
 </body>
 </html>
