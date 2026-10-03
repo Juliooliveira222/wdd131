@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação do Produto</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+    <script src="scripts/formulario.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Avaliação do Produto</h1>
+    </header>
+
+    <main>
+        <form action="review.html" method="get">
+            <div class="formularioitem">
+                <label for="product">Nome do Produto <span class="required">*</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Escolha um Produto ...</option>
+                    <option value="tv-lg-oled-c3">LG OLED EVO C3 55"</option>
+                    <option value="tv-samsung-qled-q60">Samsung QLED 4K Q60C 50"</option>
+                    <option value="tv-tcl-p635">TCL Google TV 4K P635 43"</option>
+                    <option value="tv-philips-ambilight">Philips Ambilight 4K 55"</option>
+                    <option value="tv-samsung-neo-qled">Samsung Neo QLED 4K QN90C 65"</option>
+                    <option value="tv-lg-nanocell">LG NanoCell 4K NANO77 50"</option>
+                </select>
+            </div>
+            <fieldset class="formularioitem rating-fieldset">
+                <legend>Classificação Geral <span class="required">*</span></legend>
+                <div class="rating-group">
+                    <label for="star1">
+                        <span>☆</span>
+                        <input type="radio" id="star1" name="rating" value="1" required>
+                    </label>
+                    <label for="star2">
+                        <span>☆☆</span>
+                        <input type="radio" id="star2" name="rating" value="2">
+                    </label>
+                    <label for="star3">
+                        <span>☆☆☆</span>
+                        <input type="radio" id="star3" name="rating" value="3">
+                    </label>
+                    <label for="star4">
+                        <span>☆☆☆☆</span>
+                        <input type="radio" id="star4" name="rating" value="4">
+                    </label>
+                    <label for="star5">
+                        <span>☆☆☆☆☆</span>
+                        <input type="radio" id="star5" name="rating" value="5">
+                    </label>
+                </div>
+            </fieldset>
+            <div class="formularioitem">
+                <label for="install-date">Data de Instalação <span class="required">*</span></label>
+                <input type="date" id="install-date" name="install-date" required>
+            </div>
+            <fieldset class="formularioitem">
+                <legend>Quais recursos você achou úteis no produto?</legend>
+                <p class="sub-legend">(Marque todos que se aplicam)</p>
+                
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="features" value="durabilidade"> Durabilidade</label>
+                    <label><input type="checkbox" name="features" value="facilidade"> Facilidade de Uso</label>
+                    <label><input type="checkbox" name="features" value="desempenho"> Desempenho</label>
+                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                </div>
+            </fieldset>
+            <div class="formularioitem">
+                <label for="review">Avaliação Escrita <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="4"></textarea>
+            </div>
+            <div class="formularioitem">
+                <label for="username">Seu Nome <span class="optional">(Optional)</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+            <input type="submit" value="Publicar Avaliação" class="submit-btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Júlio Oliveira | Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
