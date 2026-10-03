@@ -1,15 +1,40 @@
 const produtos = [
-    { id: "tv-lg-oled-c3", nome: "LG OLED EVO C3 55\"" },
-    { id: "tv-samsung-qled-q60", nome: "Samsung QLED 4K Q60C 50\"" },
-    { id: "tv-tcl-p635", nome: "TCL Google TV 4K P635 43\"" },
-    { id: "tv-philips-ambilight", nome: "Philips Ambilight 4K 55\"" },
-    { id: "tv-samsung-neo-qled", nome: "Samsung Neo QLED 4K QN90C 65\"" },
-    { id: "tv-lg-nanocell", nome: "LG NanoCell 4K NANO77 50\"" }
+    {
+        id: "tv-lg-oled-c3",
+        nome: "LG OLED EVO C3 55\"",
+        classificacaomedia: 4.5
+    },
+    { 
+        id: "tv-samsung-qled-q60",
+        nome: "Samsung QLED 4K Q60C 50\"",
+        classificacaomedia: 4.2
+    },
+    { 
+        id: "tv-tcl-p635", 
+        nome: "TCL Google TV 4K P635 43\"", 
+        classificacaomedia: 4.0 
+    },
+    { 
+        id: "tv-philips-ambilight", 
+        nome: "Philips Ambilight 4K 55\"", 
+        classificacaomedia: 4.3 
+    },
+    { 
+        id: "tv-samsung-neo-qled", 
+        nome: "Samsung Neo QLED 4K QN90C 65\"", 
+        classificacaomedia: 4.6 
+    },
+    { 
+        id: "tv-lg-nanocell", 
+        nome: "LG NanoCell 4K NANO77 50\"", 
+        classificacaomedia: 4.1 
+    }
 ];
 
 window.addEventListener("DOMContentLoaded", () => {
     carregarProdutos();
     configurarEnvioFormulario();
+    exibirContador();
     atualizarFooter();
 });
 
@@ -36,32 +61,12 @@ function configurarEnvioFormulario() {
     });
 }
 
-function atualizarFooter() {
-    const campoAno = document.getElementById("anoAtual");
-    const campoModificacao = document.getElementById("ultimaModificacao");
-
-    if (campoAno) {
-        campoAno.textContent = new Date().getFullYear();
-    }
-
-    if (campoModificacao) {
-        campoModificacao.textContent = Última Modificação: ${document.lastModified};
-    }
-}
-
-window.addEventListener("DOMContentLoaded", () => {
-    exibirContador();
-    atualizarFooter();
-});
-
 function exibirContador() {
     const elementoContador = document.getElementById("contador-avaliacoes");
-    
+    if (!elementoContador) return;
+
     let total = Number(localStorage.getItem("totalAvaliacoes")) || 0;
-    
-    if (elementoContador) {
-        elementoContador.textContent = total;
-    }
+    elementoContador.textContent = total;
 }
 
 function atualizarFooter() {
@@ -73,6 +78,6 @@ function atualizarFooter() {
     }
 
     if (campoModificacao) {
-        campoModificacao.textContent = Última Modificação: ${document.lastModified};
+        campoModificacao.textContent = `Última Modificação: ${document.lastModified}`;
     }
 }
