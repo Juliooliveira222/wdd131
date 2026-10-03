@@ -1,4 +1,3 @@
-
 const menuBtn = document.querySelector('#menu');
 const nav = document.querySelector('nav');
 
@@ -10,7 +9,7 @@ if (menuBtn) {
 }
 
 document.querySelector('#currentYear').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = `Última modificação: ${document.lastModified}`;
+document.querySelector('#lastModified').textContent = Última modificação: ${document.lastModified};
 
 const templos = [
   {
@@ -86,9 +85,11 @@ const templos = [
 ];
 
 const containerGrid = document.querySelector('.res-grid');
-const tituloPagina = document.querySelector('main h2');
+// Corrigido para selecionar 'main h1' em vez de 'main h2'
+const tituloPagina = document.querySelector('main h1');
 
 function renderizarTemplos(lista) {
+  if (!containerGrid) return;
   containerGrid.innerHTML = ''; 
 
   lista.forEach(templo => {
@@ -114,34 +115,34 @@ function obterAnoConsagracao(dataString) {
 
 document.querySelector('#all').addEventListener('click', (e) => {
   e.preventDefault();
-  tituloPagina.textContent = "Página Inicial";
+  if (tituloPagina) tituloPagina.textContent = "Página Inicial";
   renderizarTemplos(templos);
 });
 
 document.querySelector('#old').addEventListener('click', (e) => {
   e.preventDefault();
-  tituloPagina.textContent = "Templos Antigos (Construídos antes de 1900)";
+  if (tituloPagina) tituloPagina.textContent = "Templos Antigos (Construídos antes de 1900)";
   const antigos = templos.filter(t => obterAnoConsagracao(t.consagracao) < 1900);
   renderizarTemplos(antigos);
 });
 
 document.querySelector('#new').addEventListener('click', (e) => {
   e.preventDefault();
-  tituloPagina.textContent = "Templos Novos (Construídos após 2000)";
+  if (tituloPagina) tituloPagina.textContent = "Templos Novos (Construídos após 2000)";
   const novos = templos.filter(t => obterAnoConsagracao(t.consagracao) > 2000);
   renderizarTemplos(novos);
 });
 
 document.querySelector('#large').addEventListener('click', (e) => {
   e.preventDefault();
-  tituloPagina.textContent = "Templos Grandes (Mais de 90.000 sq ft)";
+  if (tituloPagina) tituloPagina.textContent = "Templos Grandes (Mais de 90.000 sq ft)";
   const grandes = templos.filter(t => t.area > 90000);
   renderizarTemplos(grandes);
 });
 
 document.querySelector('#small').addEventListener('click', (e) => {
   e.preventDefault();
-  tituloPagina.textContent = "Templos Pequenos (Menos de 10.000 sq ft)";
+  if (tituloPagina) tituloPagina.textContent = "Templos Pequenos (Menos de 10.000 sq ft)";
   const pequenos = templos.filter(t => t.area < 10000);
   renderizarTemplos(pequenos);
 });
