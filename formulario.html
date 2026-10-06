@@ -18,7 +18,7 @@
             <div class="formularioitem">
                 <label for="product">Nome do Produto <span class="required">*</span></label>
                 <select id="product" name="product" required>
-                    <option value="" disabled selected>Escolha um Produto ...</option>
+                    <option value="" disabled selected>Selecione um Produto ...</option>
                     <option value="tv-lg-oled-c3">LG OLED EVO C3 55"</option>
                     <option value="tv-samsung-qled-q60">Samsung QLED 4K Q60C 50"</option>
                     <option value="tv-tcl-p635">TCL Google TV 4K P635 43"</option>
@@ -36,19 +36,19 @@
                     </label>
                     <label for="star2">
                         <span>☆☆</span>
-                        <input type="radio" id="star2" name="rating" value="2">
+                        <input type="radio" id="star2" name="rating" value="2" required>
                     </label>
                     <label for="star3">
                         <span>☆☆☆</span>
-                        <input type="radio" id="star3" name="rating" value="3">
+                        <input type="radio" id="star3" name="rating" value="3" required>
                     </label>
                     <label for="star4">
                         <span>☆☆☆☆</span>
-                        <input type="radio" id="star4" name="rating" value="4">
+                        <input type="radio" id="star4" name="rating" value="4" required>
                     </label>
                     <label for="star5">
                         <span>☆☆☆☆☆</span>
-                        <input type="radio" id="star5" name="rating" value="5">
+                        <input type="radio" id="star5" name="rating" value="5" required>
                     </label>
                 </div>
             </fieldset>
@@ -69,11 +69,11 @@
             </fieldset>
             <div class="formularioitem">
                 <label for="review">Avaliação Escrita <span class="optional">(Optional)</span></label>
-                <textarea id="review" name="review" rows="4"></textarea>
+                <textarea id="review" name="review" rows="4" required></textarea>
             </div>
             <div class="formularioitem">
                 <label for="username">Seu Nome <span class="optional">(Optional)</span></label>
-                <input type="text" id="username" name="username">
+                <input type="text" id="username" name="username" required>
             </div>
             <input type="submit" value="Publicar Avaliação">
         </form>
