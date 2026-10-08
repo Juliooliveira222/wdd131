@@ -8,7 +8,8 @@
     <meta name="author" content="Júlio Oliveira Batista de Jesus">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="planejamento.css">
     <script src="planejamento.js" defer></script>
 </head>
@@ -17,12 +18,12 @@
     <header>
         <div class="header-container">
             <h1>Aqui é Vasco</h1>
-            <p class="tagline">Documento de Planejamento de Site (WDD 131)</p>
+            <p class="tagline">Site de Informações sobre o Vasco da Gama</p>
         </div>
         <nav aria-label="Navegação Principal">
             <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Últimas Notícias</a></li>
+                <li><a href="#objetivos">Página Inicial</a></li>
+                <li><a href="#resposta-historica">Resposta Histórica</a></li>
                 <li><a href="#">Curiosidades</a></li>
                 <li><a href="#">Fale Conosco</a></li>
             </ul>
@@ -30,73 +31,47 @@
     </header>
 
     <main>
+    
         <section id="objetivos" class="card">
             <h2>1. Página Inicial</h2>
             <p>O objetivo principal do site <strong>Aqui é Vasco</strong> é centralizar e fornecer informações relevantes, notícias atualizadas, dados históricos e curiosidades sobre a história e o cotidiano do clube para a torcida.</p>
             
             <figure class="hero-image">
-                <img src="imagens/aquievasco.webp" alt="Imagem representativa do site Aqui é Vasco">
-                <figcaption>Etapa inicial de mapeamento da experiência do usuário (UX).</figcaption>
+                <img src="imagens/hero-imagem.png" alt="Imagem representativa do site Aqui é Vasco" loading="lazy">
+                <figcaption>Imagem representativa do site Aqui é Vasco</figcaption>
             </figure>
         </section>
 
-        <section id="publico" class="card">
-            <h2>2. Público-Alvo & Personas</h2>
-            <div class="grid-2col">
-                <div>
-                    <h3>Perfil Geral</h3>
-                    <p>Torcedores, admiradores de futebol e entusiastas de história esportiva que buscam um portal direto, rápido e com conteúdo de qualidade sobre o Vasco.</p>
+        <section id="resposta-historica" class="card">
+            <h2>Resposta Histórica</h2>
+            <p>O marco imortal de 1924 em que o Vasco da Gama lutou contra o preconceito e defendeu a inclusão no futebol brasileiro.</p>
+
+            <figure class="response-image">
+                <img src="imagens/resposta-historica.png" alt="Carta da Resposta Histórica de 1924" loading="lazy">
+                <figcaption>Ofício n° 261 (1924) — A Resposta Histórica contra o preconceito no futebol.</figcaption>
+            </figure>
+        </section>
+        <section id="Curiosidades" class="card">
+            <h2>Curiosidades</h2>
+             <div class="curiosidades-conteudo">
+                <p>O Vasco da Gama é conhecido por sua rica história e tradição no futebol brasileiro. Aqui estão algumas curiosidades sobre o clube:</p>
+                <ul>
+                    <li>Fundado em 21 de agosto de 1898, o Vasco da Gama é um dos clubes mais antigos do Brasil.</li>
+                    <li>O clube tem uma forte ligação com a comunidade portuguesa no Brasil, refletida em seu nome e símbolos.</li>
+                    <li>O Vasco foi pioneiro na inclusão de jogadores negros e de classes sociais menos favorecidas no futebol brasileiro.</li>
+                    <li>O estádio do Vasco, São Januário, é um dos maiores estádios privados do Brasil e tem uma rica história de eventos esportivos e culturais.</li>
+                    <li>O clube possui uma das torcidas mais apaixonadas do país, conhecida por seu apoio incondicional em todos os momentos.</li>
+                </ul>
+                <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/M7poDJDnzmo?si=dLzgYdQZcQGrTJTH" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
                 </div>
-                <div>
-                    <h3>Necessidades Principais</h3>
-                    <ul>
-                        <li>Navegação ágil em dispositivos móveis.</li>
-                        <li>Leitura confortável de notícias e artigos longos.</li>
-                        <li>Facilidade para encontrar contatos e áreas interativas.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="wireframes" class="card">
-            <h2>5. Wireframes (Esboço da Interface)</h2>
-    
-            <div class="wireframe-container">
-                <h3>Layout Mobile</h3>
-                <p>Interface simplificada com foco na leitura vertical em telas pequenas.</p>
-        
-                <h3>Layout Desktop</h3>
-                <p>Distribuição do conteúdo em colunas aproveitando o espaço horizontal.</p>
-            </div>
-        </section>
-
-        <section id="estilo" class="card">
-            <h2>3. Guia de Estilo (Style Guide)</h2>
-            
-            <h3>Paleta de Cores</h3>
-            <div class="color-palette">
-                <div class="color-box color-1"><span>#000000<br>Preto Principal</span></div>
-                <div class="color-box color-2"><span>#FFFFFF<br>Branco Fundo</span></div>
-                <div class="color-box color-3"><span>#D32F2F<br>Vermelho Destaque</span></div>
-                <div class="color-box color-4"><span>#333333<br>Cinza Texto</span></div>
-            </div>
-
-            <h3>Tipografia</h3>
-            <div class="typography-demo">
-                <p class="font-heading"><strong>Títulos (Inter):</strong> Usada em H1, H2 e H3 para transmitir tradição e legibilidade sólida.</p>
-                <p class="font-body"><strong>Corpo do Texto (Saira Condensed):</strong> Usada em parágrafos e menus para garantir uma leitura leve e moderna em qualquer tela.</p>
-            </div>
-        </section>
-
-        <section id="estrutura" class="card">
-            <h2>4. Estrutura de Navegação</h2>
-            <p>Mapeamento inicial das páginas do portal:</p>
-            <ul class="sitemap-list">
-                <li><strong>Home:</strong> Destaques principais, últimas notícias e atalhos rápidos.</li>
-                <li><strong>Notícias:</strong> Cobertura diária e reportagens.</li>
-                <li><strong>Curiosidades:</strong> Fatos históricos, estatísticas e ídolos.</li>
-                <li><strong>Fale Conosco:</strong> Formulário de contato direto e redes sociais.</li>
-            </ul>
+             </div>
         </section>
     </main>
 
@@ -104,9 +79,9 @@
         <p>&copy; 2026 — Projeto idealizado por <strong>Júlio Oliveira Batista de Jesus</strong>.</p>
     </footer>
 
-<button id="btnTopo" style="display: none; position: fixed; bottom: 20px; right: 20px; background: #d32f2f; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold;">
-    ↑ Topo
-</button>
+    <button id="btnTopo" aria-label="Voltar ao topo da página">
+        ↑ Topo
+    </button>
 
 </body>
 </html>
