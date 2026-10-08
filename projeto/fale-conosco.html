@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | Aqui é Vasco</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin:0;
+            padding:0;
+        }
+
+        header{
+            background-color:#000;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        .btn-voltar{
+            display:inline-block;
+            margin:20px;
+            padding:10px 15px;
+            background-color:#000;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+        }
+
+        .btn-voltar:hover{
+            background-color:#333;
+        }
+
+        .container{
+            max-width:700px;
+            margin:20px auto;
+            background:white;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        label{
+            display:block;
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            margin-top:20px;
+            width:100%;
+            padding:12px;
+            background:#000;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aqui é Vasco</h1>
+</header>
+
+index.html
+    ← Voltar para a Página Inicial
+</a>
+
+<main class="container">
+
+    <h2>Fale Conosco</h2>
+
+    <form id="formContato">
+
+        <label for="nome">Nome</label>
+        <input
+            type="text"
+            id="nome"
+            required
+            minlength="3">
+
+        <label for="email">E-mail</label>
+        <input
+            type="email"
+            id="email"
+            required>
+
+        <label for="avaliacao">
+            Como você avalia nosso site?
+        </label>
+
+        <select id="avaliacao" required>
+            <option value="">Selecione</option>
+            <option value="1">⭐ Muito Ruim</option>
+            <option value="2">⭐⭐ Ruim</option>
+            <option value="3">⭐⭐⭐ Regular</option>
+            <option value="4">⭐⭐⭐⭐ Bom</option>
+            <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+        </select>
+
+        <label for="recomenda">
+            Você recomendaria este site?
+        </label>
+
+        <select id="recomenda" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+        </select>
+
+        <label for="comentario">Comentário</label>
+
+        <textarea
+            id="comentario"
+            rows="5"
+            minlength="10"
+            required></textarea>
+
+        <button type="submit">
+            Enviar Avaliação
+        </button>
+
+    </form>
+
+</main>
+
+<script>
+document.getElementById("formContato")
+.addEventListener("submit", function(e){
+
+    const nome =
+    document.getElementById("nome").value.trim();
+
+    const comentario =
+    document.getElementById("comentario").value.trim();
+
+    if(nome.length < 3){
+        alert("Digite um nome válido.");
+        e.preventDefault();
+        return;
+    }
+
+    if(comentario.length < 10){
+        alert("O comentário deve possuir pelo menos 10 caracteres.");
+        e.preventDefault();
+        return;
+    }
+
+    alert("Obrigado pela sua avaliação! 💢");
+});
+</script>
+
+</body>
+</html>

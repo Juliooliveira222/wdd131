@@ -123,7 +123,7 @@ h2 {
     object-fit: contain;
 }
 
-.video-container {
+.video-container , .noticias-container{
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
@@ -134,7 +134,7 @@ h2 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.video-container iframe {
+.video-container iframe ,.noticias-container iframe {
     position: absolute;
     top:0;
     left: 0;
@@ -150,7 +150,6 @@ figcaption {
     font-style: italic;
     margin-top: 0.5rem;
 }
-
 
 #btnTopo {
     display: none;

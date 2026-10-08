@@ -9,9 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="planejamento.css">
     <script src="planejamento.js" defer></script>
+    <link href="fale-conosco.html">
 </head>
 <body>
 
@@ -24,8 +24,8 @@
             <ul>
                 <li><a href="#objetivos">Página Inicial</a></li>
                 <li><a href="#resposta-historica">Resposta Histórica</a></li>
-                <li><a href="#">Curiosidades</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="#Curiosidades">Curiosidades</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -40,6 +40,16 @@
                 <img src="imagens/hero-imagem.png" alt="Imagem representativa do site Aqui é Vasco" loading="lazy">
                 <figcaption>Imagem representativa do site Aqui é Vasco</figcaption>
             </figure>
+            <div class="noticias-container">
+                <p><strong> Veja as noticias de hoje</strong></p>
+                <iframe src="https://vasco.com.br/noticias/1556470"
+                        title="Noticias do dia" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </section>
 
         <section id="resposta-historica" class="card">
@@ -65,6 +75,7 @@
                 <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/M7poDJDnzmo?si=dLzgYdQZcQGrTJTH" 
                         title="YouTube video player" 
+                        loading="lazy"
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         referrerpolicy="strict-origin-when-cross-origin"
@@ -73,6 +84,7 @@
                 </div>
              </div>
         </section>
+        
     </main>
 
     <footer>
