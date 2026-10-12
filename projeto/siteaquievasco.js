@@ -1,5 +1,14 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
     const linksDoMenu = document.querySelectorAll('nav a');
+    const hamburguerBtn = document.getElementById("hamburguerBtn");
+    const navMenu = document.getElementById("navMenu");
+    if (hamburguerBtn && navMenu) {
+        hamburguerBtn.addEventListener("click" , () => {
+        navMenu.classList.toggle("active");
+    });
+}
 
     linksDoMenu.forEach(function (link) {
         link.addEventListener('click', function (event) {
