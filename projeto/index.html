@@ -1,106 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento de Projeto | Aqui é Vasco</title>
-    <meta name="description" content="Documento de planejamento do projeto WDD 131 - Escopo, público-alvo, guia de estilo e estrutura para o site Aqui é Vasco.">
+
+    <title>Aqui é Vasco</title>
+
+    <meta name="description" content="Site com informações, história e curiosidades sobre o Vasco da Gama.">
     <meta name="author" content="Júlio Oliveira Batista de Jesus">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Saira+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Saira+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="siteaquievasco.css">
     <script src="siteaquievasco.js" defer></script>
-    <link href="fale-conosco.html">
 </head>
+
 <body>
 
     <header>
-        <div class="header-container">
-            <h1>Aqui é Vasco</h1>
-            <p class="tagline">Site de Informações sobre o Vasco da Gama</p>
-        </div>
-        <nav aria-label="Navegação Principal">
-            <button class="hamburguer" id="hamburguerBtn" aria-label="Abrir Menu de Navegação">
+
+        <h1>Aqui é Vasco</h1>
+
+        <p class="tagline">
+            História, tradição e paixão pelo Vasco da Gama.
+        </p>
+
+        <nav aria-label="Menu principal">
+
+            <button
+                id="hamburguerBtn"
+                class="hamburguer"
+                aria-label="Abrir menu">
+
                 <span></span>
                 <span></span>
                 <span></span>
+
             </button>
+
             <ul id="navMenu">
-                <li><a href="#objetivos">Página Inicial</a></li>
-                <li><a href="#resposta-historica">Resposta Histórica</a></li>
-                <li><a href="#Curiosidades">Curiosidades</a></li>
-                <li><a href="fale-conosco.html">Fale Conosco</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#historia">Resposta Histórica</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="fale-conosco.html">Contato</a></li>
             </ul>
+
         </nav>
+
     </header>
 
     <main>
-    
-        <section id="objetivos" class="card">
-            <h2>1. Página Inicial</h2>
-            <p>O objetivo principal do site <strong>Aqui é Vasco</strong> é centralizar e fornecer informações relevantes, notícias atualizadas, dados históricos e curiosidades sobre a história e o cotidiano do clube para a torcida.</p>
-            
+
+        <section id="inicio" class="card">
+
+            <h2>Página Inicial</h2>
+
+            <p>
+                Bem-vindo ao <strong>Aqui é Vasco</strong>.
+                Este espaço foi criado para compartilhar informações,
+                curiosidades e momentos marcantes da história do
+                Club de Regatas Vasco da Gama.
+            </p>
+
             <figure class="hero-image">
-                <img src="imagens/hero-imagem.png" alt="Imagem representativa do site Aqui é Vasco" loading="lazy">
-                <figcaption>Imagem representativa do site Aqui é Vasco</figcaption>
+
+                <img
+                    src="imagens/hero-imagem.png"
+                    alt="Torcida do Vasco da Gama comemorando">
+
+                <figcaption>
+                    A paixão da torcida vascaína.
+                </figcaption>
+
             </figure>
-            <div class="noticias-container">
-                <p><strong> Veja as noticias de hoje</strong></p>
-                <iframe src="https://vasco.com.br/noticias/"
-                        title="Noticias do dia" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
-                </iframe>
-            </div>
+
         </section>
 
-        <section id="resposta-historica" class="card">
+        <section id="historia" class="card">
+
             <h2>Resposta Histórica</h2>
-            <p>O marco imortal de 1924 em que o Vasco da Gama lutou contra o preconceito e defendeu a inclusão no futebol brasileiro.</p>
+
+            <p>
+                Em 1924, o Vasco ficou marcado pela defesa da igualdade
+                e da inclusão no futebol brasileiro. O clube recusou-se
+                a excluir atletas por questões sociais ou raciais,
+                deixando um importante legado para o esporte nacional.
+            </p>
 
             <figure class="response-image">
-                <img src="imagens/resposta-historica.png" alt="Carta da Resposta Histórica de 1924">
-                <figcaption>Ofício n° 261 (1924) — A Resposta Histórica contra o preconceito no futebol.</figcaption>
+
+                <img
+                    src="imagens/resposta-historica.png"
+                    alt="Documento da Resposta Histórica do Vasco da Gama">
+
+                <figcaption>
+                    Documento que simboliza a luta contra a discriminação.
+                </figcaption>
+
             </figure>
+
         </section>
-        <section id="Curiosidades" class="card">
+
+        <section id="curiosidades" class="card">
+
             <h2>Curiosidades</h2>
-             <div class="curiosidades-conteudo">
-                <p>O Vasco da Gama é conhecido por sua rica história e tradição no futebol brasileiro. Aqui estão algumas curiosidades sobre o clube:</p>
-                <ul>
-                    <li>Fundado em 21 de agosto de 1898, o Vasco da Gama é um dos clubes mais antigos do Brasil.</li>
-                    <li>O clube tem uma forte ligação com a comunidade portuguesa no Brasil, refletida em seu nome e símbolos.</li>
-                    <li>O Vasco foi pioneiro na inclusão de jogadores negros e de classes sociais menos favorecidas no futebol brasileiro.</li>
-                    <li>O estádio do Vasco, São Januário, é um dos maiores estádios privados do Brasil e tem uma rica história de eventos esportivos e culturais.</li>
-                    <li>O clube possui uma das torcidas mais apaixonadas do país, conhecida por seu apoio incondicional em todos os momentos.</li>
-                </ul>
-                <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/M7poDJDnzmo?si=dLzgYdQZcQGrTJTH" 
-                        title="YouTube video player" 
-                        loading="lazy"
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin"
-                        allowfullscreen>
+
+            <ul>
+                <li>O Vasco da Gama foi fundado em 21 de agosto de 1898.</li>
+                <li>O nome homenageia o navegador português Vasco da Gama.</li>
+                <li>São Januário foi inaugurado em 1927.</li>
+                <li>O clube é conhecido por sua luta histórica pela inclusão.</li>
+                <li>A torcida vascaína está entre as maiores do Brasil.</li>
+            </ul>
+
+            <div class="video-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/M7poDJDnzmo"
+                    title="Vídeo sobre a história do Vasco"
+                    allowfullscreen>
                 </iframe>
-                </div>
-             </div>
+
+            </div>
+
         </section>
-        
+
     </main>
 
     <footer>
-        <p>&copy;<span id="anoatual"></span> Site Desenvolvido por <strong>Júlio Oliveira Batista de Jesus</strong>.</p>
+
+        <p>
+            © <span id="anoatual"></span>
+            Desenvolvido por
+            <strong>Júlio Oliveira Batista de Jesus</strong>
+        </p>
+
         <p id="ultimaModificacao"></p>
+
     </footer>
 
-
-    <button id="btnTopo" aria-label="Voltar ao topo da página">
+    <button id="btnTopo" aria-label="Voltar ao topo">
         ↑ Topo
     </button>
 
 </body>
+
 </html>

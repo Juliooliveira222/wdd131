@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos | Aqui é Vasco</title>
+
+    <meta name="description" content="Galeria de fotos do site Aqui é Vasco.">
+
+    <link rel="stylesheet" href="siteaquievasco.css">
+    <script src="siteaquievasco.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Galeria Vascaína</h1>
+
+        <p class="tagline">
+            Momentos que representam a paixão pelo Vasco da Gama.
+        </p>
+
+        <nav>
+            <a href="index.html" class="btn-voltar">
+                ← Voltar para a Página Inicial
+            </a>
+        </nav>
+    </header>
+
+    <main class="container-galeria">
+
+        <section class="card">
+
+            <h2>Galeria de Fotos</h2>
+
+            <p>
+                Clique nas imagens para visualizar momentos marcantes
+                da Vitória do Vasco sobre o Boca Jr na Argentina.
+            </p>
+
+            <div class="grid-galeria">
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto1.jpg"
+                         alt="Torcida do Vasco na Argentina">
+                    <figcaption>Torcida do Vasco na Argentina</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto2.jpg"
+                         alt="Nosso Cão de Guarda">
+                    <figcaption>Nosso Cão de Guarda</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto3.jpg"
+                         alt="Comemoração após vitória">
+                    <figcaption>Pós-vitória</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto4.jpg"
+                         alt="Capitão da equipe">
+                    <figcaption>Nosso Capitão</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto5.jpg"
+                         alt="Comprometimento">
+                    <figcaption>Garra não vai Faltar</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto6.jpg"
+                         alt="Comissão Técnica">
+                    <figcaption>Comissão técnica do Vasco</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto7.jpg"
+                         alt="Bruno Duarte">
+                    <figcaption>Nosso Guerreiro</figcaption>
+                </figure>
+
+                <figure class="item-galeria">
+                    <img src="imagens/foto8.jpg"
+                         alt="Author do Gol">
+                    <figcaption>Adshow fez o gol da Vitória</figcaption>
+                </figure>
+
+            </div>
+
+
+            <div id="modalImagem" class="modal">
+                <span class="fechar">&times;</span>
+
+            <img
+                class="modal-conteudo"
+                id="imagemAmpliada"
+                alt="Imagem ampliada">
+
+            <div id="legendaModal"></div>
+        </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © <span id="anoatual"></span>
+            Site desenvolvido por
+            <strong>Júlio Oliveira Batista de Jesus</strong>
+        </p>
+
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+    <button id="btnTopo" aria-label="Voltar ao topo da página">
+        ↑ Topo
+    </button>
+
+</body>
+
+</html>
